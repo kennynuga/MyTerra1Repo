@@ -5,6 +5,7 @@ resource "aws_s3_bucket" "my-s3-bucket"{
    versioning {
     enabled = true
   }
+	
   tags {
     Name        = "autozane.com"
     Environment = "Development"
