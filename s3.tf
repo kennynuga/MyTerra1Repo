@@ -6,8 +6,7 @@ resource "aws_s3_bucket" "my-dev-tf-state-bucket"{
     enabled = true
   }
 	
-  tags {
-     tag = my-ec2-instance    
-  }
+  tags = "var.tag_name"    
 }
+
 
