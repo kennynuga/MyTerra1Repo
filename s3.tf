@@ -5,8 +5,7 @@ resource "aws_s3_bucket" "my-dev-tf-state-bucket"{
    versioning {
     enabled = true
   }
-	
-  tags {	  
+		  
    tags = "var.tag_name"
   }
 }
