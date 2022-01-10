@@ -8,5 +8,6 @@ resource "aws_s3_bucket" "my-dev-tf-state-bucket"{
 	
   tags {
      Name = var.tags    
+  }
 }
 
