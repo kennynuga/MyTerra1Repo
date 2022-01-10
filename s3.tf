@@ -2,11 +2,12 @@ resource "aws_s3_bucket" "my-s3-bucket"{
   bucket_prefix = "var.bucket_prefix"
   acl    = "private"
 	  
-   versioning {
+  versioning {
     enabled = true
   }
-	
-  tags = var.tag_name
+  tags = {
+    Name = "${var.tag_name}"
+  }
   
 }
 
