@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "my_s3_bucket"{
+resource "aws_s3_bucket" "my-dev-tf-state-bucket"{
   bucket_prefix = var.bucket_prefix
   acl    = "var.acl"
 	  
