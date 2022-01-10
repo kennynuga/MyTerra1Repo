@@ -3,9 +3,11 @@ resource "aws_s3_bucket" "my-dev-tf-state-bucket"{
   acl    = "var.acl"
 	  
    versioning {
-    enabled = var.versioning
+    enabled = true
   }
-	  
-  tags = var.tags
+	
+  tags {	  
+   tags = "var.tag_name"
+  }
 }
 
